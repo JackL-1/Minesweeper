@@ -1,0 +1,153 @@
+* {
+   box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  background-image: url('../Images/background.jpg') ;
+  margin-top: 10vh;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#main_content {
+margin: 0 auto; 
+height: 40vh; 
+width: 40vw;
+} 
+
+.tile_border{
+height: 100%;
+width: 100%;
+border: 20px;
+}
+
+.Gamebar {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0023c0;
+  border-bottom: 1px solid #000;
+  box-shadow: 0px 1px 0px #000;
+  font-weight: bold;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.reset_button {
+  display: block;
+  margin: 0 auto;
+  background-image: url('../Images/smiley.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50px;
+  width: 50px;
+  border: none;
+}
+
+.Clock {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  margin-left: auto;
+  margin-right: 20px;
+  font-family: '../digital font\digital-7.regular.ttf';
+}
+
+.Seconds {
+  background-color: #240000;
+  color: #FF0000;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  width: 40px;
+  height: 30px;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+
+.reset_button.endgame {
+  background-image: url('../Images/sadface.png');
+}
+
+
+.grid_wrapper {
+background: lightgray;
+margin: 0 auto;
+display: grid;
+height:100% ;
+width: 100%;
+grid-template-columns: repeat(16, 1fr); 
+grid-template-rows: repeat(16, 1fr); 
+
+}
+
+.cell {
+  margin: 0 auto; 
+  background : url('../Images/unclicked-cell.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% ;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+
+.empty{
+background-color: lightgray;
+background-image: none;
+}
+
+
+.checked{
+background-image: none;
+background-color: lightgray;
+text-align: center;
+align-self: center;
+font-size: 30px ;
+font-style: bold;
+font-weight: 1000;
+}
+
+.flag{
+  margin: 0 auto; 
+  background:  url('../Images/Flag.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.mine{
+margin: 0 auto; 
+background-size: 100%;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+
+
+.explode {
+  margin: 0 auto; 
+  background: linear-gradient(rgba(255, 0, 0, 0.2), rgba(255, 0, 0, 0.8)), url('../Images/bomb.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.reveal {
+  margin: 0 auto; 
+  background: url('../Images/bomb.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
